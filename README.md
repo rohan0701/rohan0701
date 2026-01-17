@@ -1,4 +1,4 @@
-'''<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,7 +29,6 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-        /* Animated background particles */
         .particles {
             position: fixed;
             top: 0;
