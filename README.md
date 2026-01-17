@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+'''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,11 @@
     <title>Rohan Sutar - Full-Stack Developer & AI Engineer</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700&display=swap');
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
             --primary: #2563eb;
             --primary-dark: #1e40af;
@@ -24,7 +22,6 @@
             --light: #f1f5f9;
             --white: #ffffff;
         }
-
         body {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: var(--light);
@@ -32,7 +29,6 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
-
         /* Animated background particles */
         .particles {
             position: fixed;
@@ -43,7 +39,6 @@
             overflow: hidden;
             z-index: 0;
         }
-
         .particle {
             position: absolute;
             width: 3px;
@@ -53,7 +48,6 @@
             opacity: 0.4;
             animation: float 15s infinite;
         }
-
         @keyframes float {
             0%, 100% {
                 transform: translateY(0) translateX(0);
@@ -62,7 +56,6 @@
                 transform: translateY(-100px) translateX(50px);
             }
         }
-
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -70,14 +63,12 @@
             position: relative;
             z-index: 1;
         }
-
         /* Header Section */
         .header {
             text-align: center;
             padding: 60px 0;
             margin-bottom: 60px;
         }
-
         .profile-image {
             width: 150px;
             height: 150px;
@@ -91,7 +82,6 @@
             box-shadow: 0 20px 60px rgba(37, 99, 235, 0.3);
             animation: fadeInScale 1s ease-out;
         }
-
         @keyframes fadeInScale {
             from {
                 opacity: 0;
@@ -102,7 +92,6 @@
                 transform: scale(1);
             }
         }
-
         .name {
             font-family: 'Poppins', sans-serif;
             font-size: clamp(2.5rem, 5vw, 4rem);
@@ -114,7 +103,6 @@
             margin-bottom: 15px;
             animation: fadeInUp 1s ease-out 0.2s both;
         }
-
         .title {
             font-size: clamp(1.2rem, 2.5vw, 1.5rem);
             color: var(--accent);
@@ -122,7 +110,6 @@
             margin-bottom: 20px;
             animation: fadeInUp 1s ease-out 0.4s both;
         }
-
         .bio {
             max-width: 700px;
             margin: 0 auto;
@@ -130,7 +117,6 @@
             font-size: 1.1rem;
             animation: fadeInUp 1s ease-out 0.6s both;
         }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -141,7 +127,6 @@
                 transform: translateY(0);
             }
         }
-
         /* Quick Stats */
         .quick-stats {
             display: grid;
@@ -149,7 +134,6 @@
             gap: 25px;
             margin: 50px 0;
         }
-
         .stat-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -159,13 +143,11 @@
             text-align: center;
             transition: all 0.3s ease;
         }
-
         .stat-card:hover {
             transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.08);
             box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
         }
-
         .stat-number {
             font-size: 2.5rem;
             font-weight: 700;
@@ -175,23 +157,19 @@
             background-clip: text;
             margin-bottom: 10px;
         }
-
         .stat-label {
             color: var(--gray);
             font-size: 0.95rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-
         /* Section Styling */
         .section {
             margin: 80px 0;
         }
-
         .section-header {
             margin-bottom: 40px;
         }
-
         .section-title {
             font-family: 'Poppins', sans-serif;
             font-size: 2.2rem;
@@ -202,7 +180,6 @@
             align-items: center;
             gap: 15px;
         }
-
         .section-title::before {
             content: '';
             width: 5px;
@@ -210,20 +187,17 @@
             background: linear-gradient(180deg, var(--primary), var(--secondary));
             border-radius: 10px;
         }
-
         .section-subtitle {
             color: var(--gray);
             font-size: 1.1rem;
             margin-left: 20px;
         }
-
         /* Skills Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
         }
-
         .skill-category {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -232,12 +206,10 @@
             padding: 30px;
             transition: all 0.3s ease;
         }
-
         .skill-category:hover {
             background: rgba(255, 255, 255, 0.08);
             border-color: var(--primary);
         }
-
         .category-title {
             font-size: 1.2rem;
             font-weight: 600;
@@ -247,17 +219,14 @@
             align-items: center;
             gap: 10px;
         }
-
         .category-icon {
             font-size: 1.5rem;
         }
-
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
         }
-
         .skill-tag {
             background: rgba(37, 99, 235, 0.1);
             color: var(--accent);
@@ -268,20 +237,17 @@
             border: 1px solid rgba(37, 99, 235, 0.2);
             transition: all 0.3s ease;
         }
-
         .skill-tag:hover {
             background: rgba(37, 99, 235, 0.2);
             transform: translateY(-2px);
             border-color: var(--primary);
         }
-
         /* Projects Section */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
         }
-
         .project-card {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -292,7 +258,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .project-card::before {
             content: '';
             position: absolute;
@@ -304,46 +269,38 @@
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
-
         .project-card:hover::before {
             transform: scaleX(1);
         }
-
         .project-card:hover {
             transform: translateY(-8px);
             background: rgba(255, 255, 255, 0.08);
             box-shadow: 0 20px 60px rgba(37, 99, 235, 0.3);
         }
-
         .project-header {
             display: flex;
             align-items: center;
             gap: 15px;
             margin-bottom: 20px;
         }
-
         .project-icon {
             font-size: 2rem;
         }
-
         .project-title {
             font-size: 1.4rem;
             font-weight: 600;
             color: var(--white);
         }
-
         .project-features {
             list-style: none;
             margin-top: 20px;
         }
-
         .project-features li {
             color: var(--gray);
             padding: 8px 0;
             padding-left: 25px;
             position: relative;
         }
-
         .project-features li::before {
             content: '✓';
             position: absolute;
@@ -351,13 +308,11 @@
             color: var(--accent);
             font-weight: bold;
         }
-
         /* Experience & Achievements */
         .timeline {
             position: relative;
             padding-left: 40px;
         }
-
         .timeline::before {
             content: '';
             position: absolute;
@@ -367,12 +322,10 @@
             width: 2px;
             background: linear-gradient(180deg, var(--primary), var(--secondary));
         }
-
         .timeline-item {
             margin-bottom: 40px;
             position: relative;
         }
-
         .timeline-item::before {
             content: '';
             position: absolute;
@@ -385,18 +338,15 @@
             border: 3px solid var(--dark);
             box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
         }
-
         .achievement-title {
             font-size: 1.2rem;
             font-weight: 600;
             color: var(--white);
             margin-bottom: 8px;
         }
-
         .achievement-desc {
             color: var(--gray);
         }
-
         /* Contact Links */
         .contact-grid {
             display: grid;
@@ -404,7 +354,6 @@
             gap: 20px;
             margin-top: 40px;
         }
-
         .contact-btn {
             display: flex;
             align-items: center;
@@ -420,17 +369,14 @@
             font-size: 1.05rem;
             transition: all 0.3s ease;
         }
-
         .contact-btn:hover {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             transform: translateY(-3px);
             box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);
         }
-
         .contact-icon {
             font-size: 1.5rem;
         }
-
         /* Footer */
         .footer {
             text-align: center;
@@ -439,40 +385,33 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             margin-top: 80px;
         }
-
         .footer-motto {
             font-size: 1.2rem;
             font-weight: 600;
             color: var(--white);
             margin-bottom: 15px;
         }
-
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
                 padding: 20px 15px;
             }
-
             .header {
                 padding: 40px 0;
             }
-
             .section-title {
                 font-size: 1.8rem;
             }
-
             .timeline {
                 padding-left: 30px;
             }
         }
-
         /* Scroll animations */
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
             transition: all 0.6s ease;
         }
-
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
@@ -482,7 +421,6 @@
 <body>
     <!-- Particle Background -->
     <div class="particles" id="particles"></div>
-
     <div class="container">
         <!-- Header -->
         <header class="header">
@@ -491,7 +429,6 @@
             <p class="title">Full-Stack Developer & AI Engineer</p>
             <p class="bio">Passionate software engineer specializing in building scalable web applications and AI-powered solutions. Committed to writing clean code and delivering exceptional user experiences.</p>
         </header>
-
         <!-- Quick Stats -->
         <div class="quick-stats">
             <div class="stat-card">
@@ -511,7 +448,6 @@
                 <div class="stat-label">Learning Mode</div>
             </div>
         </div>
-
         <!-- Skills Section -->
         <section class="section fade-in">
             <div class="section-header">
@@ -560,7 +496,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Projects Section -->
         <section class="section fade-in">
             <div class="section-header">
@@ -622,7 +557,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Achievements -->
         <section class="section fade-in">
             <div class="section-header">
@@ -648,7 +582,6 @@
                 </div>
             </div>
         </section>
-
         <!-- Contact Section -->
         <section class="section fade-in">
             <div class="section-header">
@@ -666,14 +599,12 @@
                 </a>
             </div>
         </section>
-
         <!-- Footer -->
         <footer class="footer">
             <p class="footer-motto">"Consistency beats intensity. Clean code scales. Build first, explain later."</p>
             <p>© 2025 Rohan Sutar. Crafted with precision and passion.</p>
         </footer>
     </div>
-
     <script>
         // Generate particles
         const particlesContainer = document.getElementById('particles');
@@ -686,13 +617,11 @@
             particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
             particlesContainer.appendChild(particle);
         }
-
         // Scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
         };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -700,7 +629,6 @@
                 }
             });
         }, observerOptions);
-
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
         });
