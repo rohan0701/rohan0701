@@ -264,10 +264,10 @@ Production Deployments:
 ---
 
 ### 🎵 Spotify Playing
+### 🎧 Currently Playing on Spotify
 
-[![Spotify](https://novatorem-rohan0701.vercel.app/api/spotify)](https://open.spotify.com/user/31l6tzsmxqp3jzqt5q5nqf3ngvee)
+[![Spotify](https://novatorem-rohan0701.vercel.app/api/spotify)](https://open.spotify.com/user/31a6t5qjqe4wdsbyk7ikvca3s6iu)
 
----
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=150&section=footer&text=Thanks%20for%20visiting!&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=72" width="100%"/>
 
